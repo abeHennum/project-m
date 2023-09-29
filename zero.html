@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zero based budget</title>
+    <script>
+        function saveTime(){
+            var money = parseFloat(document.getElementById('paycheck').value);
+        
+            var gg = money * 0.12;
+            document.getElementById('giving').innerHTML = gg.toFixed(2);  
+            var sg = money * 0.15;
+            document.getElementById('saving').innerHTML = sg.toFixed(2);  
+            var eg = money * 0.14;
+            document.getElementById('eating').innerHTML = eg.toFixed(2); 
+            var bs = money * 0.08;
+            document.getElementById('bills').innerHTML = bs.toFixed(2); 
+            var us = money * 0.16;
+            document.getElementById('upgrades').innerHTML = us.toFixed(2);
+            var cs = money * 0.12;
+            document.getElementById('cars').innerHTML = cs.toFixed(2);  
+            var ml = money * 0.05;
+            document.getElementById('medical').innerHTML = ml.toFixed(2);  
+            var ie = money * 0.06;
+            document.getElementById('insurance').innerHTML = ie.toFixed(2);
+            var bw = money * 0.06;
+            document.getElementById('blow').innerHTML = bw.toFixed(2);   
+            var wr = money * 0.06;
+            document.getElementById('wear').innerHTML = wr.toFixed(2); 
+            
+            var total = gg + sg + eg + bs + us + cs + ml + ie + bw + wr ; 
+            document.getElementById('total').innerHTML = total.toFixed(2); 
+             }
+    </script>
+    <style>
+        .center {
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Budget</h1>
+        <h4>If the cents can be divided up evenly they will be left out of the totals. Leave out the cents.</h4><br>
+    </header>
+    <main class="center">
+        <input type="text" id="paycheck"><br>
+        <button type="button" onclick="saveTime()">Calculate</button><br>
+       12% Giving:<div id="giving"></div>
+       15% Saving:<div id="saving"></div> 
+      14% Eating:<div id="eating"></div> 
+      8% Bills:<div id="bills"></div> 
+    16% Upgrades:<div id="upgrades"></div> 
+       12% Cars:<div id="cars"></div> 
+       5% Medical:<div id="medical"></div> 
+       6% Insurance:<div id="insurance"></div> 
+       6%Blow:<div id="blow"></div> 
+       6% Wear:<div id="wear"></div> 
+        Total:<div id="total"></div>
+    </main>
+  
+    <footer class="footer">
+        <b>Hopefully this saves you a lot of time! From Abraham &copy;</b>
+    </footer>
+</body>
+</html>
