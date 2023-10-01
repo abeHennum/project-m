@@ -7,30 +7,38 @@
     <script>
         function saveTime(){
             var money = parseFloat(document.getElementById('paycheck').value);
-        
-            var gg = money * 0.12;
-            document.getElementById('giving').innerHTML = gg.toFixed(2);  
-            var sg = money * 0.15;
-            document.getElementById('saving').innerHTML = sg.toFixed(2);  
-            var eg = money * 0.14;
-            document.getElementById('eating').innerHTML = eg.toFixed(2); 
-            var bs = money * 0.08;
-            document.getElementById('bills').innerHTML = bs.toFixed(2); 
-            var us = money * 0.16;
-            document.getElementById('upgrades').innerHTML = us.toFixed(2);
-            var cs = money * 0.12;
-            document.getElementById('cars').innerHTML = cs.toFixed(2);  
-            var ml = money * 0.05;
-            document.getElementById('medical').innerHTML = ml.toFixed(2);  
-            var ie = money * 0.06;
-            document.getElementById('insurance').innerHTML = ie.toFixed(2);
-            var bw = money * 0.06;
-            document.getElementById('blow').innerHTML = bw.toFixed(2);   
-            var wr = money * 0.06;
-            document.getElementById('wear').innerHTML = wr.toFixed(2); 
+            var sub = Math.floor(money);
+           
+            var a = money - sub; 
+            var abe = a.toFixed(2);
             
-            var total = gg + sg + eg + bs + us + cs + ml + ie + bw + wr ; 
-            document.getElementById('total').innerHTML = total.toFixed(2); 
+
+            document.getElementById('change').innerHTML = abe; 
+        
+            var gg = sub * 0.12;
+            document.getElementById('giving').innerHTML = gg.toFixed(2);  
+            var sg = sub * 0.15;
+            document.getElementById('saving').innerHTML = sg.toFixed(2);  
+            var eg = sub * 0.14;
+            document.getElementById('eating').innerHTML = eg.toFixed(2); 
+            var bs = sub * 0.08;
+            document.getElementById('bills').innerHTML = bs.toFixed(2); 
+            var us = sub * 0.16;
+            document.getElementById('upgrades').innerHTML = us.toFixed(2);
+            var cs = sub * 0.12;
+            document.getElementById('cars').innerHTML = cs.toFixed(2);  
+            var ml = sub * 0.05;
+            document.getElementById('medical').innerHTML = ml.toFixed(2);  
+            var ie = sub * 0.06;
+            document.getElementById('insurance').innerHTML = ie.toFixed(2);
+            var bw = sub * 0.06;
+            document.getElementById('blow').innerHTML = bw.toFixed(2);   
+            var wr = sub * 0.06;
+            document.getElementById('wear').innerHTML = wr.toFixed(2); 
+
+          var total = sub + a;
+            document.getElementById('total').innerHTML = total; 
+            
              }
     </script>
     <style>
@@ -43,12 +51,15 @@
         .footer {
             text-align: center;
         }
+        .bold {
+            color : green
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Budget</h1>
-        <h4>If the cents can't be divided evenly they will be left out of the totals. Leave out the cents.</h4><br>
+        <h1 class="bold">Budget</h1>
+        <h4 class="bold">If the cents can't be divided evenly they will be left out of the totals. Leave out the cents.</h4><br>
     </header>
     <main class="center">
         <input type="text" id="paycheck"><br>
@@ -63,6 +74,7 @@
        6% Insurance:<div id="insurance"></div> 
        6%Blow:<div id="blow"></div> 
        6% Wear:<div id="wear"></div> 
+       For Abe:<div id="change"></div>
         Total:<div id="total"></div>
     </main>
   
