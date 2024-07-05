@@ -1,0 +1,29 @@
+/* body{
+    --background-color: ;
+} */
+
+.center {
+    text-align: center;
+}
+.header {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
+.bold {
+    color : green
+}
+
+#content{
+    background-color: var(--background-color);
+}
+
+button{
+    margin: 10px ; 
+}
+
+button:hover{
+    background-color: white;
+}
+

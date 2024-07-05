@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft With The Boys</title>
+    <script>
+        function powersOfTwo(){
+            currentNumber = 0; 
+            outputString = "";
+            while(currentNumber < 32 ) {
+                outputString += "2 to the " + currentNumber; 
+                result = Math.pow(2, currentNumber); 
+                outputString += "=" + result; 
+                outputString += "<br>" ; 
+                currentNumber++; 
+
+            }
+            document.getElementById('outputDiv').innerHTML = outputString; 
+        }
+
+        function powersOfThree(){
+            currentNumber = 0; 
+            outputString = "";
+            while(currentNumber < 32 ) {
+                outputString += "3 to the " + currentNumber; 
+                result = Math.pow(3, currentNumber); 
+                outputString += "=" + result; 
+                outputString += "<br>" ; 
+                currentNumber++; 
+
+            }
+            document.getElementById('outputDiv').innerHTML = outputString; 
+        } 
+
+    </script>
+</head>
+<body>
+    <h1 class="chunk">Dean Don and Rash Tash</h1>
+    <button type="button" onclick="powersOfTwo()">Powers Of Two</button>
+    <button type="button" onclick="powersOfThree()">Powers Of Three</button>
+    <div id="outputDiv">
+    </div>
+</body>
+</html>

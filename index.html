@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zero based budget</title>
+    <link rel="stylesheet" href="styles/projectm.css">
     <script>
         function saveTime(){
             var money = parseFloat(document.getElementById('paycheck').value);
@@ -41,22 +42,9 @@
             
              }
     </script>
-    <style>
-        .center {
-            text-align: center;
-        }
-        .header {
-            text-align: center;
-        }
-        .footer {
-            text-align: center;
-        }
-        .bold {
-            color : green
-        }
-    </style>
 </head>
 <body>
+    <div id="content">
     <header class="header">
         <h1 class="bold">Budget</h1>
         <h4 class="bold">If the cents can't be divided evenly they will be left out of the totals. Leave out the cents.</h4><br>
@@ -77,9 +65,9 @@
        For Abe:<div id="change"></div>
         Total:<div id="total"></div>
     </main>
-  
     <footer class="footer">
         <b class="bold">Hopefully this saves you a lot of time! From Abraham &copy;</b>
     </footer>
+    </div>
 </body>
 </html>
