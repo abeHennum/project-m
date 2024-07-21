@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --background-color: #c0d6df;
+    --header-color: #166088;
+    --card-color: #4f6d7a; 
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--header-color);
+    color: white;
+    align-items: center;
+}
+
+header img{
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#hero img{
+    max-width: 100%;
+}
+
+.intro{
+    background-color: var(--card-color);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: white solid 3px;
+    max-width: 500px;  
+}
+
+#intro-div{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+body{
+    margin: 0 auto;
+    background-color: var(--background-color);
+    text-align: center;
+    font-family: 'Rubik', 'sans-serif';
+}
+
+
+li{
+    list-style: none;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+#nav-hover:hover{
+    background-color: var(--background-color);
+    border-radius: 25px;
+}
+
+#nav-hover:hover .link-hover{
+    color: black; 
+}
+
+nav{
+    align-content: center;
+}
+
+#navbar{
+    display: flex;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-content{
+    text-align: center;
+}
+
+#home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 25px;
+}
+
+.history-link a img{
+    border-radius: 25px;
+    
+}
+
+.tournament-link a img{
+    border-radius: 25px;
+    
+}
+
+.players-link a img{
+    border-radius: 25px;  
+}
+
+
+/* history page */
+
+#history-info-1{
+    background-color: var(--card-color);
+    color: white;
+    border-radius: 25px;
+    border: solid white 3px; 
+    padding: 20px;
+    margin: 25px;
+    font-size: 1.3rem;
+}
+
+#history-image-1{
+    margin-top: 50px;
+}
+
+#history-image-1 img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#history-info-2{
+    background-color: var(--card-color);
+    color: white;
+    border-radius: 25px;
+    border: solid white 3px; 
+    padding: 20px;
+    margin: 25px;
+    font-size: 1.3rem;
+}
+
+#history-image-2{
+    margin-top: 50px;
+}
+
+#history-image-2 img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#history-info-3{
+    background-color: var(--card-color);
+    color: white;
+    border-radius: 25px;
+    border: solid white 3px; 
+    padding: 20px;
+    margin: 25px;
+    font-size: 1.3rem;
+}
+
+#history-image-3{
+    margin-top: 50px;
+}
+
+#history-image-3 img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+
+
+/* players page */
+
+.players-head{
+    margin-top: 50px;
+}
+
+
+    /* messi */
+
+.player-1{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#player-info-1{
+    background-color: var(--card-color);
+    grid-column: 2/3;
+    color: white;
+    border: solid white 3px;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+#player-info-1 p{
+    padding: 15px;
+    font-size: 1.5rem;
+} 
+
+#player-image-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#player-image-1 img{
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+    /* ronaldo */
+
+.player-2{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+#player-info-2{
+    background-color: var(--card-color);
+    grid-column: 1/2;
+    color: white;
+    border: solid white 3px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+#player-info-2 p{
+    padding: 15px;
+    font-size: 1.5rem;
+} 
+
+#player-image-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#player-image-2 img{
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+    /* halaand */
+
+.player-3{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#player-info-3{
+    background-color: var(--card-color);
+    grid-column: 2/3;
+    color: white;
+    border: solid white 3px;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+#player-info-3 p{
+    padding: 15px;
+    font-size: 1.5rem;
+} 
+
+#player-image-3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#player-image-3 img{
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+    /* mbappe */
+
+.player-4{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+#player-info-4{
+    background-color: var(--card-color);
+    grid-column: 1/2;
+    color: white;
+    border: solid white 3px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+#player-info-4 p{
+    padding: 15px;
+    font-size: 1.5rem;
+} 
+
+#player-image-4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#player-image-4 img{
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+    /* neymar */
+
+.player-5{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#player-info-5{
+    background-color: var(--card-color);
+    grid-column: 2/3;
+    color: white;
+    border: solid white 3px;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
+#player-info-5 p{
+    padding: 15px;
+    font-size: 1.5rem;
+} 
+
+#player-image-5{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+    
+
+#player-image-5 img{
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+/* tournaments */
+
+.tournament-head{
+    margin-top: 50px;
+}
+
+    /* world cup */
+
+.tournament-1{
+    border: solid var(--header-color) 3px;
+    border-radius: 25px;
+    margin: 25px; 
+    padding: 25px;
+}
+
+#tournament-image-1 img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#tournament-info-1{
+    background-color: var(--card-color);
+    margin: 25px;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: white solid 3px;
+    font-size: 1.3rem;
+}
+
+    /* copa america */
+
+.tournament-2{
+    border: solid var(--header-color) 3px;
+    border-radius: 25px;
+    margin: 25px; 
+    padding: 25px;
+}
+
+#tournament-image-2 img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#tournament-info-2{
+    background-color: var(--card-color);
+    margin: 25px;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: white solid 3px;
+    font-size: 1.3rem;
+}
+
+    /* euros */
+
+.tournament-3{
+    border: solid var(--header-color) 3px;
+    border-radius: 25px;
+    margin: 25px; 
+    padding: 25px;
+}
+
+#tournament-image-3 img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#tournament-info-3{
+    background-color: var(--card-color);
+    margin: 25px;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: white solid 3px;
+    font-size: 1.3rem;
+}
+
+
+    /* Champions League */
+
+.tournament-4{
+    border: solid var(--header-color) 3px;
+    border-radius: 25px;
+    margin: 25px; 
+    padding: 25px;
+}
+
+#tournament-image-4 img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#tournament-info-4{
+    background-color: var(--card-color);
+    margin: 25px;
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: white solid 3px;
+    font-size: 1.3rem;
+}
+     
+
+footer{
+    display: flex; 
+    justify-content: space-around;
+    background-color: var(--header-color);
+    color: white;
+    padding:15px;
+    margin-top: 25px;
+}
+
+
+
+
+
